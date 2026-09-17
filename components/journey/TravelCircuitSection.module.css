@@ -1,0 +1,98 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-8 md:pt-12 px-6 md:px-12 lg:px-20 pb-8;
+}
+
+.scrollWrapper {
+  @apply w-full h-full flex flex-col max-w-7xl mx-auto overflow-y-auto pb-10;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.topDecorative {
+  @apply w-full flex flex-col items-center justify-center mb-6 md:mb-10 shrink-0;
+}
+
+.topTitle {
+  @apply font-bold text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase;
+}
+
+.topBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mb-2;
+}
+
+.bottomBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mt-2 rotate-180;
+}
+
+.headerBox {
+  @apply flex flex-col w-full mb-8 md:mb-12 shrink-0;
+}
+
+.headerTitle {
+  @apply font-serif text-3xl md:text-4xl lg:text-[40px] text-[#481c22] uppercase tracking-wide mb-3;
+}
+
+.divider {
+  @apply border-t-2 border-[#481c22]/50 w-24 md:w-32 mb-6;
+}
+
+.headerSubtitle {
+  @apply text-lg md:text-xl lg:text-2xl text-[#481c22] font-bold mb-4;
+}
+
+.paragraph {
+  @apply text-[14px] md:text-base text-[#481c22]/80 font-normal leading-relaxed text-justify max-w-5xl;
+}
+
+.cardsGrid {
+  @apply w-full flex flex-col lg:flex-row gap-6 md:gap-8 justify-between mt-auto shrink-0;
+}
+
+.circuitCard {
+  @apply w-full lg:flex-1 shrink-0 flex flex-col h-[180px] md:h-[400px] border border-[#481c22];
+}
+
+.cardHeader {
+  @apply w-full bg-[#F4EDE3] p-4 flex items-center border-b border-[#481c22];
+}
+
+.cardTitle {
+  @apply font-bold text-lg text-[#481c22] uppercase tracking-wide;
+}
+
+.cardBody {
+  @apply flex-1 bg-[#481c22] relative overflow-hidden flex flex-col;
+}
+
+.cardBullets {
+  @apply list-disc pl-8 pt-6 text-white/90 text-sm md:text-base font-light z-10;
+}
+
+.cardBullets li {
+  @apply mb-1;
+}
+
+.cardImageWrapper {
+  @apply absolute bottom-0 left-0 w-full h-[60%] z-20 pointer-events-none;
+}
+
+.cardImage {
+  @apply object-contain w-full h-full;
+}
+
+.cardImageJaipur {
+  @apply object-bottom scale-110 translate-y-4;
+}
+
+.cardImageJeevad {
+  @apply object-bottom scale-110 translate-y-4;
+}
+
+.cardImageRanthambore {
+  @apply object-right-bottom ml-[-10%] translate-x-4;
+}

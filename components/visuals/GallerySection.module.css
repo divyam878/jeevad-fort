@@ -1,0 +1,56 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden px-4 md:px-10 lg:px-16 pt-24 pb-8;
+}
+
+.scrollWrapper {
+  @apply w-full h-full overflow-y-auto pb-20;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.gridContainer {
+  @apply w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12;
+}
+
+/* 
+  We use a standard column layout. 
+  Left column, right column to replicate masonry.
+*/
+.colLeft {
+  @apply flex flex-col w-full md:w-[45%] lg:w-[40%] gap-4 md:gap-8 lg:gap-12 shrink-0;
+}
+
+.colRight {
+  @apply flex flex-col w-full md:w-[55%] lg:w-[60%] gap-4 md:gap-8 lg:gap-12 shrink-0;
+}
+
+/* Image wrappers */
+.imageWrapper {
+  @apply relative w-full overflow-hidden shrink-0;
+}
+
+/* Approximate Aspect ratios based on mockup */
+.ratioLandscape {
+  @apply aspect-[3/2];
+}
+
+.ratioWide {
+  @apply aspect-[2/1];
+}
+
+.ratioSquare {
+  @apply aspect-square;
+}
+
+.ratioPortrait {
+  @apply aspect-[4/5];
+}
+
+.image {
+  @apply object-cover w-full h-full;
+}

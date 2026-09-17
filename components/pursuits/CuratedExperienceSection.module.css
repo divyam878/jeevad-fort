@@ -1,0 +1,93 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-8 md:pt-12 px-6 md:px-12 lg:px-20 pb-8;
+}
+
+.topDecorative {
+  @apply w-full flex flex-col items-center justify-center mb-6 md:mb-10 z-10 shrink-0;
+}
+
+.topTitle {
+  @apply font-bold text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase;
+}
+
+.topBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mb-2;
+}
+
+.bottomBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mt-2 rotate-180;
+}
+
+.headerBox {
+  @apply flex flex-col max-w-7xl w-full mx-auto mb-8 md:mb-12 shrink-0;
+}
+
+.headerTitle {
+  @apply font-serif text-2xl md:text-3xl lg:text-[36px] text-[#481c22] uppercase tracking-wide mb-3;
+}
+
+.divider {
+  @apply border-t-2 border-[#481c22]/50 w-24 md:w-32 mb-6;
+}
+
+.headerSubtitle {
+  @apply text-base md:text-lg lg:text-xl text-[#481c22] font-normal;
+}
+
+.contentGrid {
+  @apply flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-24 max-w-7xl w-full mx-auto h-0 min-h-0;
+}
+
+.leftColumn {
+  @apply flex flex-col h-full justify-center;
+}
+
+.itemNumber {
+  @apply font-serif text-6xl md:text-8xl lg:text-[100px] text-[#481c22] leading-none font-semibold mb-4 md:mb-8;
+}
+
+.itemInfo {
+  @apply flex flex-col;
+}
+
+.itemTitle {
+  @apply text-lg md:text-xl lg:text-2xl font-bold text-[#481c22] mb-2;
+}
+
+.itemSubtitle {
+  @apply text-sm md:text-base text-[#481c22]/80 italic mb-4;
+}
+
+.itemDivider {
+  @apply border-t border-[#481c22]/30 w-full mb-6;
+}
+
+.itemDescription {
+  @apply text-[13px] md:text-[15px] text-[#481c22]/80 font-normal leading-relaxed text-justify;
+}
+
+.rightColumn {
+  @apply flex flex-col h-full border border-[#481c22] overflow-hidden;
+}
+
+.highlightsBox {
+  @apply bg-[#481c22] p-6 md:p-8 shrink-0;
+}
+
+.highlightsTitle {
+  @apply text-xl md:text-2xl font-bold text-white mb-3;
+}
+
+.highlightsText {
+  @apply text-[13px] md:text-[15px] text-white/80 font-light leading-relaxed;
+}
+
+.imageWrapper {
+  @apply relative flex-1 w-full bg-[#f4ede3];
+}
+
+.featureImage {
+  @apply object-cover object-center w-full h-full;
+}

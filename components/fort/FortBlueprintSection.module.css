@@ -1,0 +1,77 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8;
+}
+
+.backgroundWrapper {
+  @apply absolute inset-0 w-full h-full z-0 opacity-80 pointer-events-none flex items-center justify-center;
+}
+
+.backgroundImage {
+  @apply object-cover md:object-contain object-center w-full h-full scale-110;
+}
+
+.contentContainer {
+  @apply relative z-10 w-full h-full flex flex-col max-w-[1400px] mx-auto;
+}
+
+.header {
+  @apply mb-8 md:mb-12;
+}
+
+.mainTitle {
+  @apply font-serif text-2xl md:text-3xl lg:text-[36px] text-[#481c22] uppercase tracking-wide mb-2 md:mb-3;
+}
+
+.divider {
+  @apply border-t-2 border-[#481c22]/50 w-32 md:w-48 mb-6 md:mb-8;
+}
+
+.subtitle {
+  @apply text-2xl md:text-3xl lg:text-[32px] font-bold text-[#481c22];
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-24 gap-y-10 md:gap-y-16 overflow-y-auto pb-8;
+}
+
+.gridItem {
+  @apply flex flex-col;
+}
+
+.itemHeader {
+  @apply flex items-start gap-4 mb-4;
+}
+
+.itemNumber {
+  @apply font-bold text-5xl md:text-6xl lg:text-7xl text-[#481c22] leading-none;
+}
+
+.itemTitleGroup {
+  @apply flex flex-col justify-center pt-2;
+}
+
+.itemTitle {
+  @apply text-xl md:text-2xl font-bold text-[#481c22] mb-1;
+}
+
+.itemSubtitle {
+  @apply text-base md:text-lg text-[#481c22]/80 italic font-light;
+}
+
+.itemText {
+  @apply text-[14px] md:text-[15px] text-[#481c22]/80 font-normal leading-relaxed text-justify;
+}
+
+.watermarkText {
+  @apply absolute bottom-6 right-6 text-right z-10;
+}
+
+.watermarkTitle {
+  @apply font-bold text-xl md:text-2xl text-[#481c22]/30 uppercase tracking-wider mb-1;
+}
+
+.watermarkSubtitle {
+  @apply text-sm md:text-base text-[#481c22]/30 uppercase tracking-widest;
+}

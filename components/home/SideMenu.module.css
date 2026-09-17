@@ -1,0 +1,57 @@
+@reference "../../app/globals.css";
+
+.container {
+  @apply absolute inset-0 z-50 transition-opacity duration-500;
+}
+
+.containerOpen {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.containerClosed {
+  @apply opacity-0 pointer-events-none;
+}
+
+.backdrop {
+  @apply absolute inset-0 bg-black/40 backdrop-blur-sm;
+}
+
+.sidebar {
+  @apply absolute top-0 right-0 w-full max-w-[400px] h-full bg-[#481c22] border-l border-white/20 transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col;
+}
+
+.sidebarOpen {
+  @apply translate-x-0;
+}
+
+.sidebarClosed {
+  @apply translate-x-full;
+}
+
+.closeContainer {
+  @apply flex justify-end p-8;
+}
+
+.closeBtn {
+  @apply text-white hover:text-gray-400 transition-colors;
+}
+
+.menuItems {
+  @apply flex-1 flex flex-col px-10 py-4 gap-8 uppercase tracking-[0.15em] text-sm font-light;
+}
+
+.menuLink {
+  @apply hover:text-gray-400 transition-colors;
+}
+
+.menuLinkActive {
+  @apply hover:text-gray-400 transition-colors border-b border-white/20 pb-4 w-fit pr-12;
+}
+
+.reserveContainer {
+  @apply p-10 mb-8;
+}
+
+.reserveBtn {
+  @apply w-full py-4 border border-white hover:bg-white hover:text-[#481c22] transition-colors uppercase tracking-[0.15em] text-sm font-semibold;
+}

@@ -1,0 +1,61 @@
+@reference "../../app/globals.css";
+
+.navbar {
+  @apply absolute top-0 left-0 right-0 z-40 flex items-center justify-between px-4 py-4 w-full max-w-[1600px] mx-auto;
+}
+
+.spacer {
+  @apply flex-1;
+}
+
+.logoContainer {
+  @apply flex-1 flex justify-center;
+}
+
+.logo {
+  @apply object-contain mix-blend-screen;
+}
+
+.navItems {
+  @apply flex-1 flex justify-end items-center gap-6;
+}
+
+.reserveBtn {
+  @apply text-sm font-semibold tracking-[0.1em] hover:text-gray-300 transition-colors hidden sm:block;
+}
+
+.menuBtn {
+  @apply flex flex-col gap-[6px] w-8 h-8 justify-center items-center;
+}
+
+.menuLine1 {
+  @apply block w-8 h-[1px] bg-white transition-all duration-300 ml-auto;
+}
+
+.menuBtn:hover .menuLine1 {
+  @apply w-6;
+}
+
+.menuLine2 {
+  @apply block w-6 h-[1px] bg-white transition-all duration-300 ml-auto;
+}
+
+.menuBtn:hover .menuLine2 {
+  @apply w-8;
+}
+
+.menuLine3 {
+  @apply block w-8 h-[1px] bg-white ml-auto;
+}
+
+.logoDark {
+  mix-blend-mode: normal;
+}
+
+.textDark {
+  @apply text-[#481c22] hover:text-[#7a303a];
+}
+
+.bgDark {
+  @apply bg-[#481c22];
+}

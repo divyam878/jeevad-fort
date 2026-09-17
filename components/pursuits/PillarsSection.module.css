@@ -1,0 +1,74 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-8 md:pt-12 px-6 md:px-12 lg:px-20 pb-8;
+}
+
+.topDecorative {
+  @apply w-full flex flex-col items-center justify-center mb-6 md:mb-10 z-10 shrink-0;
+}
+
+.topTitle {
+  @apply font-bold text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase;
+}
+
+.topBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mb-2;
+}
+
+.bottomBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mt-2 rotate-180;
+}
+
+.headerBox {
+  @apply flex flex-col max-w-7xl w-full mx-auto mb-8 shrink-0;
+}
+
+.headerTitle {
+  @apply font-serif text-3xl md:text-4xl lg:text-[40px] text-[#481c22] uppercase tracking-wide mb-3;
+}
+
+.divider {
+  @apply border-t-2 border-[#481c22]/50 w-24 md:w-32 mb-6;
+}
+
+.paragraph {
+  @apply text-base md:text-lg lg:text-[20px] text-[#481c22] font-normal;
+}
+
+.grid {
+  @apply flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl w-full mx-auto overflow-y-auto md:overflow-visible md:h-0 md:min-h-0 pb-4;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  @apply flex flex-col border border-[#481c22] min-h-[260px] md:min-h-0 md:h-full overflow-hidden;
+}
+
+.cardHeader {
+  @apply bg-[#F4EDE3] border-b border-[#481c22] p-3 md:p-4 shrink-0;
+}
+
+.cardTitle {
+  @apply font-bold text-[#481c22] text-sm md:text-base lg:text-lg tracking-wide uppercase;
+}
+
+.cardBody {
+  @apply flex-1 bg-[#481c22] flex flex-col justify-between overflow-hidden relative;
+}
+
+.cardText {
+  @apply text-white/90 text-[13px] md:text-[14px] lg:text-base font-light p-4 md:p-5 z-10;
+}
+
+.cardImageWrapper {
+  @apply relative w-full h-[140px] md:h-[60%] lg:h-[65%] mt-auto flex items-end justify-center overflow-visible;
+}
+
+.cardImage {
+  @apply object-contain object-bottom w-full h-full p-2;
+}

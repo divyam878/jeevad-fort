@@ -1,0 +1,15 @@
+@reference "../globals.css";
+
+.outerContainer {
+  @apply relative w-full h-[100dvh] bg-[#481c22] overflow-hidden p-3 sm:p-4 flex flex-col;
+}
+
+.container {
+  @apply relative flex-1 h-0 border border-white/20 overflow-y-auto overflow-x-hidden snap-y snap-mandatory bg-[#481c22];
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+

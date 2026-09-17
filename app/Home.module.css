@@ -1,0 +1,9 @@
+@reference "./globals.css";
+
+.outerContainer {
+  @apply h-screen bg-[#481c22] p-3 sm:p-4 text-white font-sans flex flex-col;
+}
+
+.container {
+  @apply relative flex-1 h-0 border border-white/30 overflow-y-auto overflow-x-hidden snap-y snap-mandatory;
+}

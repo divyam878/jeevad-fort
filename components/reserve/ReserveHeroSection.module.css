@@ -1,0 +1,25 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full flex flex-col items-center justify-center;
+}
+
+.content {
+  @apply max-w-4xl mx-auto text-center flex flex-col items-center;
+}
+
+.subtitle {
+  @apply font-bold text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase mb-4;
+}
+
+.title {
+  @apply font-serif text-4xl md:text-5xl lg:text-[64px] text-[#481c22] mb-6 leading-tight;
+}
+
+.divider {
+  @apply w-24 h-[1px] bg-[#481c22]/30 mb-6;
+}
+
+.description {
+  @apply text-base md:text-lg text-[#481c22]/80 font-light max-w-2xl mx-auto leading-relaxed;
+}

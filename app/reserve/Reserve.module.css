@@ -1,0 +1,25 @@
+@reference "../globals.css";
+
+.outerContainer {
+  @apply relative w-full h-[100dvh] bg-[#481c22] overflow-hidden p-3 sm:p-4 flex flex-col;
+}
+
+.container {
+  @apply relative flex-1 h-0 border border-white/20 overflow-hidden bg-[#F4EDE3] flex flex-col;
+}
+
+.contentWrapper {
+  @apply flex-1 flex flex-col lg:flex-row w-full h-full pt-24 lg:pt-0 overflow-y-auto lg:overflow-hidden;
+}
+
+.leftCol {
+  @apply w-full lg:w-1/2 flex items-start lg:items-center justify-center p-6 lg:p-12;
+}
+
+.rightCol {
+  @apply w-full lg:w-1/2 flex items-start lg:items-center justify-center p-6 lg:p-12 lg:overflow-y-auto pb-24 lg:pb-12;
+  scrollbar-width: none;
+}
+.rightCol::-webkit-scrollbar {
+  display: none;
+}

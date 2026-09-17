@@ -1,0 +1,91 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-8 md:pt-12 px-6 md:px-12 lg:px-20 pb-8;
+}
+
+.scrollWrapper {
+  @apply w-full h-full flex flex-col max-w-7xl mx-auto overflow-y-auto pb-10;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.topDecorative {
+  @apply w-full flex flex-col items-center justify-center mb-6 md:mb-10 shrink-0;
+}
+
+.topTitle {
+  @apply font-bold text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase;
+}
+
+.topBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mb-2;
+}
+
+.bottomBorder {
+  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mt-2 rotate-180;
+}
+
+.headerBox {
+  @apply flex flex-col w-full mb-8 md:mb-10 shrink-0;
+}
+
+.headerTitle {
+  @apply font-serif text-3xl md:text-4xl lg:text-[40px] text-[#481c22] uppercase tracking-wide mb-3;
+}
+
+.divider {
+  @apply border-t-2 border-[#481c22]/50 w-24 md:w-32 mb-6;
+}
+
+.headerSubtitle {
+  @apply text-lg md:text-xl lg:text-2xl text-[#481c22] font-bold;
+}
+
+.grid {
+  @apply flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 w-full mt-4;
+}
+
+.card {
+  @apply flex flex-col border border-[#481c22] h-[350px] md:h-[400px] lg:h-[450px] overflow-hidden;
+}
+
+.cardHeader {
+  @apply bg-[#F4EDE3] border-b border-[#481c22] p-4 shrink-0;
+}
+
+.cardTitle {
+  @apply font-bold text-[#481c22] text-base md:text-lg tracking-wide uppercase;
+}
+
+.cardBody {
+  @apply flex-1 bg-[#481c22] flex flex-col relative overflow-hidden;
+}
+
+.cardText {
+  @apply text-white/90 text-[13px] md:text-[14px] lg:text-base font-light p-5 z-10;
+}
+
+.cardImageWrapper {
+  @apply absolute bottom-0 left-0 w-full h-[65%] z-20 pointer-events-none;
+}
+
+.cardImage {
+  @apply object-contain w-full h-full;
+}
+
+/* Custom positioning based on mockup */
+.fruitImage {
+  @apply object-bottom scale-[1.5];
+}
+
+.dishImage {
+  @apply object-bottom;
+}
+
+.chilliImage {
+  @apply object-right-bottom scale-[1.0];
+}

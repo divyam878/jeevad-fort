@@ -1,0 +1,13 @@
+@reference "../globals.css";
+
+.outerContainer {
+  @apply relative w-full h-screen overflow-hidden bg-[#F4EDE3] md:p-3 lg:p-4 p-3 flex flex-col;
+}
+
+.container {
+  @apply relative flex-1 h-0 border border-[#481c22] overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-[#F4EDE3];
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
