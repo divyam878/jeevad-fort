@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./CtaSection.module.css";
 
 export default function CtaSection() {
@@ -18,7 +19,7 @@ export default function CtaSection() {
             </p>
           </div>
 
-          <div className={styles.ctaBlock}>
+          <Link href="/reserve" className={styles.ctaBlock}>
             <div className={styles.ctaContent}>
               <h3 className={styles.ctaTitle}>
                 BOOK<br />
@@ -30,7 +31,7 @@ export default function CtaSection() {
                 </svg>
               </div>
             </div>
-          </div>
+          </Link>
 
         </div>
       </div>

@@ -1,0 +1,87 @@
+@reference "../../app/globals.css";
+
+.footer {
+  @apply relative w-full shrink-0 bg-[#481c22] p-0 md:p-0;
+}
+
+/* Outer thin border rectangle */
+.outerBorder {
+  @apply border border-[#F4EDE3]/30 w-full;
+}
+
+/* Single horizontal row: left pane | right CTA */
+.mainRow {
+  @apply flex flex-col lg:flex-row w-full;
+}
+
+/* ── LEFT PANE ─────────────────────────────────────────── */
+.leftPane {
+  @apply flex flex-col flex-1 border-b border-[#F4EDE3]/30 lg:border-b-0 lg:border-r lg:border-r-[#F4EDE3]/30;
+}
+
+/* Logo + Nav side by side in the top area */
+.topContent {
+  @apply flex flex-col sm:flex-row flex-1;
+}
+
+/* Logo block */
+.logoBlock {
+  @apply flex flex-col justify-between p-8 lg:p-10
+        min-w-[200px] lg:min-w-[230px];
+}
+
+.logoImg {
+  @apply w-[110px] h-auto mb-6;
+}
+
+.tagline {
+  @apply text-[#F4EDE3] font-sans text-sm font-light leading-relaxed;
+}
+
+/* Nav columns */
+.navBlock {
+  @apply flex flex-row gap-12 p-8 lg:p-10 flex-1 items-start;
+}
+
+.navCol {
+  @apply flex flex-col gap-5;
+}
+
+.navLink {
+  @apply text-[#F4EDE3] font-sans text-xs tracking-[0.18em] uppercase font-light
+         hover:text-white transition-colors duration-200 cursor-pointer;
+}
+
+/* Copyright bar — bottom of left pane only */
+.bottomBar {
+  @apply border-t border-[#F4EDE3]/30 px-8 lg:px-10 py-4;
+}
+
+.copyright {
+  @apply text-[#F4EDE3] font-sans text-xs font-light;
+}
+
+/* ── RIGHT CTA BLOCK ────────────────────────────────────── */
+.ctaBlock {
+  @apply flex flex-col items-center justify-center
+         w-full lg:w-[300px] xl:w-[340px] shrink-0
+         py-12 px-8 lg:p-12
+         cursor-pointer transition-opacity duration-300 hover:opacity-75;
+}
+
+.ctaContent {
+  @apply flex flex-col items-center justify-center text-center w-full;
+}
+
+.ctaTitle {
+  @apply font-sans text-white text-2xl md:text-3xl
+         italic font-light tracking-[0.12em] leading-relaxed mb-8 uppercase;
+}
+
+.arrowWrapper {
+  @apply w-full max-w-[180px] flex items-center justify-center overflow-hidden;
+}
+
+.arrowIcon {
+  @apply w-full h-auto;
+}

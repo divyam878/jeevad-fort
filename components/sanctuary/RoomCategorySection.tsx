@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./RoomCategorySection.module.css";
 
 interface RoomCategoryProps {
@@ -83,14 +84,14 @@ export default function RoomCategorySection({
                 ))}
               </ul>
             </div>
-            <div className={styles.reserveBox}>
+            <Link href="/reserve" className={styles.reserveBox}>
               <h5 className={styles.reserveText} dangerouslySetInnerHTML={{ __html: reserveText }} />
               <div className={styles.arrowWrapper}>
                 <svg className={styles.arrowIcon} viewBox="0 0 100 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 5H98M98 5L94 1M98 5L94 9" stroke="#481c22" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className={styles.gallery}>

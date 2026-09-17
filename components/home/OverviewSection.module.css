@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative h-full w-full shrink-0 flex flex-col md:flex-row snap-start bg-[#481c22];
+  @apply relative h-full w-full shrink-0 flex flex-col md:flex-row bg-[#481c22];
 }
 
 .leftColumn {

@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-4 md:pt-6 lg:pt-8 px-6 md:px-12 lg:px-20 pb-4 md:pb-6;
+  @apply relative w-full h-full shrink-0 flex flex-col overflow-hidden pt-4 md:pt-6 lg:pt-8 px-6 md:px-12 lg:px-20 pb-4 md:pb-6;
 }
 
 /* Optional Top Decorative (Shared for Room Categories) */

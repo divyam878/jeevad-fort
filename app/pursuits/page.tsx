@@ -8,6 +8,7 @@ import PillarsSection from "@/components/pursuits/PillarsSection";
 import CuratedExperienceSection from "@/components/pursuits/CuratedExperienceSection";
 import WildlifeSection from "@/components/pursuits/WildlifeSection";
 import ItinerarySection from "@/components/pursuits/ItinerarySection";
+import Footer from "@/components/home/Footer";
 import styles from "./Pursuits.module.css";
 
 export default function PursuitsPage() {
@@ -70,6 +71,7 @@ export default function PursuitsPage() {
 
         <WildlifeSection />
         <ItinerarySection />
+        <Footer />
 
       </div>
       <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />

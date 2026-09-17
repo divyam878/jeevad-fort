@@ -5,7 +5,7 @@
 }
 
 .container {
-  @apply relative flex-1 h-0 border border-[#481c22] overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-[#F4EDE3];
+  @apply relative flex-1 h-0 border border-[#481c22] overflow-y-auto overflow-x-hidden scroll-smooth bg-[#F4EDE3];
   scrollbar-width: none;
 }
 .container::-webkit-scrollbar {

@@ -5,5 +5,5 @@
 }
 
 .container {
-  @apply relative flex-1 h-0 border border-[#481c22] overflow-y-auto overflow-x-hidden snap-y snap-mandatory;
+  @apply relative flex-1 h-0 border border-[#481c22] overflow-y-auto overflow-x-hidden ;
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
@@ -33,9 +34,11 @@ export default function AboutSection() {
         </p>
 
         <div className={styles.buttonContainer}>
-          <button className={styles.button}>
-            Discover Jeevad
-          </button>
+          <Link href="/reserve">
+            <button className={styles.button}>
+              Discover Jeevad
+            </button>
+          </Link>
         </div>
       </div>
     </section>

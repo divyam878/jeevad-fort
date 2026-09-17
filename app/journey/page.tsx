@@ -9,6 +9,7 @@ import DestinationProfileSection from "@/components/journey/DestinationProfileSe
 import TravelCircuitSection from "@/components/journey/TravelCircuitSection";
 import ConnectivitySection from "@/components/journey/ConnectivitySection";
 import LandscapeSection from "@/components/journey/LandscapeSection";
+import Footer from "@/components/home/Footer";
 import styles from "./Journey.module.css";
 
 export default function JourneyPage() {
@@ -25,6 +26,7 @@ export default function JourneyPage() {
         <TravelCircuitSection />
         <ConnectivitySection />
         <LandscapeSection />
+        <Footer />
         
       </div>
       <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />

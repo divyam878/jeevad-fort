@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col snap-start overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8 pb-6 md:pb-8 lg:pb-12;
+  @apply relative w-full h-full shrink-0 flex flex-col overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8 pb-6 md:pb-8 lg:pb-12;
 }
 
 .titleContainer {

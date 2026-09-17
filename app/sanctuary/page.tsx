@@ -6,6 +6,7 @@ import SanctuaryHeroSection from "@/components/sanctuary/SanctuaryHeroSection";
 import SanctuaryIntroSection from "@/components/sanctuary/SanctuaryIntroSection";
 import SanctuaryOverviewSection from "@/components/sanctuary/SanctuaryOverviewSection";
 import RoomCategorySection from "@/components/sanctuary/RoomCategorySection";
+import Footer from "@/components/home/Footer";
 import styles from "./Sanctuary.module.css";
 
 export default function SanctuaryPage() {
@@ -71,6 +72,7 @@ export default function SanctuaryPage() {
           reserveText="RESERVE DELUXE<br/>ROOM"
           images={mockImages}
         />
+        <Footer />
       </div>
       <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </div>

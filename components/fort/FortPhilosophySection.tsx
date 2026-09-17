@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./FortPhilosophySection.module.css";
 
 export default function FortPhilosophySection() {
@@ -31,7 +32,7 @@ export default function FortPhilosophySection() {
             </p>
           </div>
 
-          <div className={styles.ctaBlock}>
+          <Link href="/reserve" className={styles.ctaBlock}>
             <div className={styles.ctaContent}>
               <h5 className={styles.ctaActionTitle}>
                 BOOK<br />
@@ -43,7 +44,7 @@ export default function FortPhilosophySection() {
                 </svg>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

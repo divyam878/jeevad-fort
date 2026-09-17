@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative h-full w-full shrink-0 flex flex-col snap-start bg-[#481c22] p-10 md:p-16 lg:p-20 xl:p-24 overflow-y-auto;
+  @apply relative h-full w-full shrink-0 flex flex-col bg-[#481c22] p-10 md:p-16 lg:p-20 xl:p-24 overflow-y-auto;
 }
 
 .header {

@@ -4,6 +4,7 @@ import Navbar from "@/components/home/Navbar";
 import SideMenu from "@/components/home/SideMenu";
 import VisualsHeroSection from "@/components/visuals/VisualsHeroSection";
 import GallerySection from "@/components/visuals/GallerySection";
+import Footer from "@/components/home/Footer";
 import styles from "./Visuals.module.css";
 
 export default function VisualsPage() {
@@ -15,6 +16,7 @@ export default function VisualsPage() {
         <Navbar onOpenMenu={() => setIsMenuOpen(true)} variant="light" />
         <VisualsHeroSection />
         <GallerySection />
+        <Footer />
         <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       </div>
     </main>

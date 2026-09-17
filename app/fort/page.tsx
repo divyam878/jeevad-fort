@@ -8,6 +8,7 @@ import FortLivingHeritageSection from "@/components/fort/FortLivingHeritageSecti
 import FortBlueprintSection from "@/components/fort/FortBlueprintSection";
 import FortPreservationSection from "@/components/fort/FortPreservationSection";
 import FortPhilosophySection from "@/components/fort/FortPhilosophySection";
+import Footer from "@/components/home/Footer";
 import styles from "./Fort.module.css";
 
 export default function FortPage() {
@@ -23,6 +24,7 @@ export default function FortPage() {
         <FortBlueprintSection />
         <FortPreservationSection />
         <FortPhilosophySection />
+        <Footer />
       </div>
       <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </div>

@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full flex flex-col items-center justify-center snap-start overflow-hidden;
+  @apply relative w-full h-full flex flex-col items-center justify-center overflow-hidden;
 }
 
 .titleBox {

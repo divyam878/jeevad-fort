@@ -8,6 +8,7 @@ import CulinaryHeritageSection from "@/components/dining/CulinaryHeritageSection
 import SignatureDiningSection from "@/components/dining/SignatureDiningSection";
 import ImmersiveExperienceSection from "@/components/dining/ImmersiveExperienceSection";
 import OurApproachSection from "@/components/dining/OurApproachSection";
+import Footer from "@/components/home/Footer";
 import styles from "./Dining.module.css";
 
 export default function DiningPage() {
@@ -64,6 +65,7 @@ export default function DiningPage() {
         ))}
 
         <OurApproachSection />
+        <Footer />
       </div>
       <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </div>
