@@ -1,7 +1,8 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8;
+  /* Dynamic height & scrolling on mobile, strict full-height containment on desktop */
+  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col overflow-y-auto md:overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8;
 }
 
 .titleContainer {
@@ -17,7 +18,8 @@
 }
 
 .gridContainer {
-  @apply flex flex-col md:flex-row w-full gap-8 md:gap-12 lg:gap-16 h-full pb-4 md:pb-6 overflow-y-auto md:overflow-hidden;
+  /* Natural height on mobile, full-height stretch on desktop */
+  @apply flex flex-col md:flex-row w-full gap-8 md:gap-12 lg:gap-16 h-auto md:h-full pb-4 md:pb-6 md:overflow-hidden;
 }
 
 .leftColumn {
@@ -33,7 +35,8 @@
 }
 
 .imageWrapper {
-  @apply relative w-full h-[220px] md:h-[280px] lg:h-[340px] shrink-0 mt-auto;
+  /* Simple spacing on mobile; mt-auto pins image to bottom on desktop */
+  @apply relative w-full h-[220px] md:h-[280px] lg:h-[340px] shrink-0 mt-4 md:mt-auto;
 }
 
 .image {
@@ -41,7 +44,8 @@
 }
 
 .rightColumn {
-  @apply flex flex-col flex-1 bg-[#481c22] p-8 md:p-12 text-white h-full mb-8 md:mb-0 shrink-0;
+  /* h-auto on mobile prevents clipping list contents; preserves h-full on desktop */
+  @apply flex flex-col flex-1 bg-[#481c22] p-6 md:p-12 text-white h-auto md:h-full mb-8 md:mb-0 shrink-0;
 }
 
 .principlesTitle {

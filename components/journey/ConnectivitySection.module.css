@@ -1,11 +1,11 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col overflow-hidden pt-8 md:pt-12 px-6 md:px-12 lg:px-20 pb-8;
+  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col overflow-y-auto md:overflow-hidden pt-6 md:pt-12 px-4 md:px-12 lg:px-20 pb-6 md:pb-8;
 }
 
 .scrollWrapper {
-  @apply w-full h-full flex flex-col max-w-7xl mx-auto overflow-y-auto pb-10;
+  @apply w-full h-full flex flex-col max-w-7xl mx-auto overflow-y-auto pb-6 md:pb-10;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -14,43 +14,43 @@
 }
 
 .topDecorative {
-  @apply w-full flex flex-col items-center justify-center mb-6 md:mb-10 shrink-0;
+  @apply w-full flex flex-col items-center justify-center mb-4 md:mb-10 shrink-0;
 }
 
 .topTitle {
-  @apply font-bold text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase;
+  @apply font-bold text-xs sm:text-sm md:text-base text-[#481c22] tracking-[0.2em] uppercase;
 }
 
 .topBorder {
-  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mb-2;
+  @apply w-[120px] md:w-[200px] h-[12px] md:h-[15px] opacity-70 object-contain mb-1 md:mb-2;
 }
 
 .bottomBorder {
-  @apply w-[150px] md:w-[200px] h-[15px] opacity-70 object-contain mt-2 rotate-180;
+  @apply w-[120px] md:w-[200px] h-[12px] md:h-[15px] opacity-70 object-contain mt-1 md:mt-2 rotate-180;
 }
 
 .headerBox {
-  @apply flex flex-col w-full mb-8 shrink-0;
+  @apply flex flex-col w-full mb-6 md:mb-8 shrink-0;
 }
 
 .headerTitle {
-  @apply font-serif text-3xl md:text-4xl lg:text-[40px] text-[#481c22] uppercase tracking-wide mb-3;
+  @apply font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[40px] text-[#481c22] uppercase tracking-wide mb-2 md:mb-3;
 }
 
 .divider {
-  @apply border-t-2 border-[#481c22]/50 w-24 md:w-32 mb-6;
+  @apply border-t-2 border-[#481c22]/50 w-20 md:w-32 mb-4 md:mb-6;
 }
 
 .headerSubtitle {
-  @apply text-lg md:text-xl text-[#481c22] font-bold mb-4;
+  @apply text-base sm:text-lg md:text-xl text-[#481c22] font-bold mb-2 md:mb-4;
 }
 
 .paragraph {
-  @apply text-[14px] md:text-base text-[#481c22]/80 font-normal leading-relaxed text-justify max-w-4xl;
+  @apply text-[13px] md:text-base text-[#481c22]/80 font-normal leading-relaxed text-left md:text-justify max-w-4xl;
 }
 
 .routesContainer {
-  @apply flex flex-col lg:flex-row gap-6 md:gap-8 w-full mt-auto shrink-0;
+  @apply flex flex-col lg:flex-row gap-6 md:gap-8 w-full mt-6 md:mt-auto shrink-0;
 }
 
 .routeCard {

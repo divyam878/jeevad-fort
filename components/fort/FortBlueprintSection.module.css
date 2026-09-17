@@ -1,7 +1,8 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8;
+  /* Dynamic height on mobile; fixed full-screen on desktop */
+  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col  md:overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8;
 }
 
 .backgroundWrapper {
@@ -13,11 +14,12 @@
 }
 
 .contentContainer {
-  @apply relative z-10 w-full h-full flex flex-col max-w-[1400px] mx-auto;
+  /* h-auto allows mobile text to expand naturally without clipping */
+  @apply relative z-10 w-full h-auto md:h-full flex flex-col max-w-[1400px] mx-auto;
 }
 
 .header {
-  @apply mb-8 md:mb-12;
+  @apply mb-6 md:mb-12;
 }
 
 .mainTitle {
@@ -25,15 +27,16 @@
 }
 
 .divider {
-  @apply border-t-2 border-[#481c22]/50 w-32 md:w-48 mb-6 md:mb-8;
+  @apply border-t-2 border-[#481c22]/50 w-32 md:w-48 mb-4 md:mb-8;
 }
 
 .subtitle {
-  @apply text-2xl md:text-3xl lg:text-[32px] font-bold text-[#481c22];
+  @apply text-xl md:text-3xl lg:text-[32px] font-bold text-[#481c22];
 }
 
 .grid {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-24 gap-y-10 md:gap-y-16 overflow-y-auto pb-8;
+  /* Let page handle mobile scrolling instead of nested overflow-y */
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-24 gap-y-8 md:gap-y-16 overflow-visible md:overflow-y-auto pb-16 md:pb-8;
 }
 
 .gridItem {
@@ -41,37 +44,39 @@
 }
 
 .itemHeader {
-  @apply flex items-start gap-4 mb-4;
+  @apply flex items-start gap-3 md:gap-4 mb-3 md:mb-4;
 }
 
 .itemNumber {
-  @apply font-bold text-5xl md:text-6xl lg:text-7xl text-[#481c22] leading-none;
+  @apply font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#481c22] leading-none;
 }
 
 .itemTitleGroup {
-  @apply flex flex-col justify-center pt-2;
+  @apply flex flex-col justify-center pt-1 md:pt-2;
 }
 
 .itemTitle {
-  @apply text-xl md:text-2xl font-bold text-[#481c22] mb-1;
+  @apply text-lg md:text-2xl font-bold text-[#481c22] mb-1;
 }
 
 .itemSubtitle {
-  @apply text-base md:text-lg text-[#481c22]/80 italic font-light;
+  @apply text-sm md:text-lg text-[#481c22]/80 italic font-light;
 }
 
 .itemText {
-  @apply text-[14px] md:text-[15px] text-[#481c22]/80 font-normal leading-relaxed text-justify;
+  /* Avoid awkward text justification gaps on narrow mobile screens */
+  @apply text-[13px] md:text-[15px] text-[#481c22]/80 font-normal leading-relaxed text-left md:text-justify;
 }
 
 .watermarkText {
-  @apply absolute bottom-6 right-6 text-right z-10;
+  /* Relative flow on mobile prevents it overlapping grid items */
+  @apply relative mt-8 md:mt-0 md:absolute md:bottom-6 md:right-6 text-right z-10 pb-6 md:pb-0;
 }
 
 .watermarkTitle {
-  @apply font-bold text-xl md:text-2xl text-[#481c22]/30 uppercase tracking-wider mb-1;
+  @apply font-bold text-lg md:text-2xl text-[#481c22]/30 uppercase tracking-wider mb-1;
 }
 
 .watermarkSubtitle {
-  @apply text-sm md:text-base text-[#481c22]/30 uppercase tracking-widest;
+  @apply text-xs md:text-base text-[#481c22]/30 uppercase tracking-widest;
 }

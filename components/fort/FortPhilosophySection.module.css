@@ -1,7 +1,8 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8 pb-6 md:pb-8 lg:pb-12;
+  /* Dynamic height on mobile; strictly locked to parent height on desktop */
+  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col overflow-y-auto md:overflow-hidden pt-6 md:pt-8 lg:pt-12 px-4 md:px-6 lg:px-8 pb-6 md:pb-8 lg:pb-12;
 }
 
 .titleContainer {
@@ -17,7 +18,8 @@
 }
 
 .contentContainer {
-  @apply flex flex-col mb-auto;
+  /* Removed mb-auto to allow balanced spacing */
+  @apply flex flex-col mb-4 md:mb-0;
 }
 
 .subtitle {
@@ -34,23 +36,25 @@
 
 /* Inverted CTA Styles */
 .ctaContainer {
-  @apply bg-[#481c22] w-full mt-8 md:mt-12 p-3 md:p-5 lg:p-6 shrink-0;
+  /* my-auto centers the CTA block vertically within the remaining space */
+  @apply bg-[#481c22] w-full my-auto p-3 md:p-5 lg:p-6 shrink-0;
 }
 
 .ctaInnerBorder {
-  @apply border border-[#f4ede3]/50 w-full flex flex-col md:flex-row p-6 md:p-8 lg:p-10 gap-8 lg:gap-4 justify-between items-center;
+  /* Align text left on mobile, center vertically on desktop */
+  @apply border border-[#f4ede3]/50 w-full flex flex-col md:flex-row p-5 sm:p-6 md:p-8 lg:p-10 gap-6 md:gap-8 lg:gap-4 justify-between items-center;
 }
 
 .ctaTextContent {
-  @apply flex flex-col justify-center max-w-2xl flex-1;
+  @apply flex flex-col justify-center max-w-2xl flex-1 text-center md:text-left;
 }
 
 .ctaTitle {
-  @apply font-serif text-xl md:text-2xl lg:text-[32px] text-[#f4ede3] uppercase tracking-wide leading-snug font-light mb-6;
+  @apply font-serif text-lg sm:text-xl md:text-2xl lg:text-[32px] text-[#f4ede3] uppercase tracking-wide leading-snug font-light mb-4 md:mb-6;
 }
 
 .ctaSubtitle {
-  @apply text-[14px] md:text-[16px] text-[#f4ede3] font-normal leading-relaxed;
+  @apply text-[13px] md:text-[16px] text-[#f4ede3] font-normal leading-relaxed;
 }
 
 .ctaBlock {
@@ -62,11 +66,11 @@
 }
 
 .ctaActionTitle {
-  @apply font-sans text-white text-xl md:text-2xl lg:text-[28px] italic font-light tracking-[0.15em] leading-relaxed mb-6 uppercase;
+  @apply font-sans text-white text-lg md:text-2xl lg:text-[28px] italic font-light tracking-[0.15em] leading-relaxed mb-4 md:mb-6 uppercase;
 }
 
 .arrowWrapper {
-  @apply w-full max-w-[200px] flex items-center justify-center overflow-hidden;
+  @apply w-full max-w-[150px] md:max-w-[200px] flex items-center justify-center overflow-hidden;
 }
 
 .arrowIcon {

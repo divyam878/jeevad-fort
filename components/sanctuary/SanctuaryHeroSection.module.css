@@ -1,17 +1,19 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full shrink-0 flex flex-col items-center overflow-hidden pt-32 md:pt-40;
+  /* Remove top padding on mobile; restore pt-32 md:pt-40 on desktop */
+  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col items-center overflow-hidden pt-0 md:pt-40 px-4;
 }
 
 .title {
-  @apply text-5xl md:text-7xl lg:text-[100px] text-[#481c22] uppercase tracking-wide font-sans font-bold z-10;
+  /* my-auto centers vertically on mobile; text-6xl/7xl keeps it large and prominent */
+  @apply my-auto md:my-0 w-full text-center text-6xl sm:text-7xl md:text-7xl lg:text-[100px] text-[#481c22] uppercase tracking-wide font-sans font-bold z-10 leading-none;
 }
 
 .imageWrapper {
-  @apply absolute bottom-0 left-0 w-full h-[65%] md:h-[75%] lg:h-[80%] z-0 pointer-events-none;
+  @apply absolute bottom-0 inset-x-0 w-full h-[50%] sm:h-[60%] md:h-[75%] lg:h-[80%] z-0 pointer-events-none flex items-end justify-center;
 }
 
 .fortImage {
-  @apply object-cover object-bottom md:object-contain w-full h-full;
+  @apply w-full h-full object-contain object-bottom;
 }

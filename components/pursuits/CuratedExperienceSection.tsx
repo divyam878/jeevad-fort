@@ -24,11 +24,13 @@ export default function CuratedExperienceSection({
 }: CuratedExperienceProps) {
   return (
     <section className={styles.section}>
-      <div className={styles.topDecorative}>
-        <Image src="/assets/flower-border.svg" alt="border" width={200} height={20} className={styles.topBorder} />
-        <span className={styles.topTitle}>CURATED EXPERIENCES</span>
-        <Image src="/assets/flower-border.svg" alt="border" width={200} height={20} className={styles.bottomBorder} />
-      </div>
+      {isFirst && (
+        <div className={styles.topDecorative}>
+          <Image src="/assets/flower-border.svg" alt="border" width={200} height={20} className={styles.topBorder} />
+          <span className={styles.topTitle}>CURATED EXPERIENCES</span>
+          <Image src="/assets/flower-border.svg" alt="border" width={200} height={20} className={styles.bottomBorder} />
+        </div>
+      )}
 
       {isFirst && (
         <div className={styles.headerBox}>

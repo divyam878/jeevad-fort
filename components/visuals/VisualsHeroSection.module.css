@@ -1,21 +1,21 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full h-full flex flex-col items-center justify-center overflow-hidden;
+  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col items-center justify-center overflow-hidden px-4;
 }
 
 .titleBox {
-  @apply relative z-10 flex flex-col items-center justify-center -translate-y-10 md:-translate-y-20;
+  @apply my-auto md:my-0 relative z-10 flex flex-col items-center justify-center w-full text-center md:-translate-y-20;
 }
 
 .title {
-  @apply font-sans font-bold text-5xl md:text-7xl lg:text-[100px] text-white uppercase tracking-widest;
+  @apply font-sans font-bold text-7xl sm:text-7xl md:text-7xl lg:text-[100px] text-white uppercase tracking-widest leading-none;
 }
 
 .fortImageWrapper {
-  @apply absolute bottom-0 left-0 w-full h-[60%] md:h-[70%] z-20 pointer-events-none;
+  @apply absolute bottom-0 inset-x-0 w-full h-[50%] sm:h-[60%] md:h-[70%] z-20 pointer-events-none flex items-end justify-center;
 }
 
 .fortImage {
-  @apply object-cover object-bottom w-full h-full;
+  @apply object-contain object-bottom w-full h-full;
 }

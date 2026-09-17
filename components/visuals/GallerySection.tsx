@@ -13,7 +13,7 @@ export default function GallerySection() {
             {/* Top Left: Dinner scene (using dinner.png placeholder for now) */}
             <div className={`${styles.imageWrapper} ${styles.ratioLandscape}`}>
               <Image 
-                src="/assets/dinner.png" 
+                src="/assets/dinner-image.png" 
                 alt="Dinner at Jeevad Fort" 
                 fill 
                 className={styles.image}

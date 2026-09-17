@@ -1,31 +1,34 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative h-full w-full shrink-0 flex flex-col bg-[#481c22] p-10 md:p-16 lg:p-20 xl:p-24 overflow-y-auto;
+  /* Dynamic height: expands naturally on mobile, fills the screen on desktop */
+  @apply relative min-h-screen h-auto lg:h-screen w-full shrink-0 flex flex-col bg-[#481c22] p-6 sm:p-10 md:p-14 lg:p-16 xl:p-20;
 }
 
 .header {
-  @apply mb-10 shrink-0;
+  @apply mb-8 md:mb-10 lg:mb-12 shrink-0;
 }
 
 .title {
-  @apply font-serif text-3xl md:text-4xl text-[#f4ede3] uppercase tracking-wide;
+  @apply font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#f4ede3] uppercase tracking-wide;
 }
 
 .divider {
-  @apply border-white/30 my-6 w-full max-w-[200px];
+  @apply border-white/30 my-4 md:my-6 w-full max-w-[200px];
 }
 
 .subtitle {
-  @apply text-[17px] text-[#e0d7c6] font-light leading-relaxed;
+  @apply text-base md:text-[17px] lg:text-lg text-[#e0d7c6] font-light leading-relaxed;
 }
 
 .grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 flex-1 min-h-0 pb-8;
+  /* Re-enable flex expansion on large displays to fill available viewport height */
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pb-8 lg:pb-0 lg:flex-1 lg:min-h-0;
 }
 
 .card {
-  @apply flex flex-col border border-[#f4ede3] relative min-h-[400px] lg:min-h-0 bg-[#481c22] cursor-pointer transition-colors duration-500;
+  /* Keep mobile fluid, restore tall min-height on desktop */
+  @apply flex flex-col border border-[#f4ede3]/10 relative min-h-[380px] lg:min-h-[480px] xl:min-h-[520px] bg-[#481c22] cursor-pointer transition-colors duration-500 overflow-hidden;
 }
 
 .cardBgHover {
@@ -37,11 +40,11 @@
 }
 
 .cardHeader {
-  @apply bg-[#f4ede3] py-4 px-6 shrink-0 relative z-10;
+  @apply bg-[#f4ede3] py-4 px-6 lg:py-5 lg:px-7 shrink-0 relative z-10;
 }
 
 .cardTitle {
-  @apply font-sans font-bold text-[17px] text-[#481c22] uppercase tracking-wider relative z-10;
+  @apply font-sans font-bold text-[17px] lg:text-lg text-[#481c22] uppercase tracking-wider relative z-10;
 }
 
 .cardBody {
@@ -49,7 +52,7 @@
 }
 
 .cardText {
-  @apply text-[15px] text-[#e0d7c6] font-light leading-relaxed p-6 z-10 relative transition-colors duration-500;
+  @apply text-[15px] lg:text-base text-[#e0d7c6] font-light leading-relaxed p-6 lg:p-7 z-10 relative transition-colors duration-500;
 }
 
 .card:hover .cardText {
@@ -57,7 +60,7 @@
 }
 
 .cardImageWrapper {
-  @apply absolute bottom-0 left-0 right-0 h-[65%] z-10 pointer-events-none p-2 transition-transform duration-500;
+  @apply absolute bottom-0 left-0 right-0 h-[65%] lg:h-[70%] z-10 pointer-events-none p-2 transition-transform duration-500;
 }
 
 .cardImage {
@@ -65,9 +68,9 @@
 }
 
 .potWrapper {
-  @apply origin-bottom scale-[1.9] mb-[-20px] md:scale-[1.55] md:mb-[-30px] lg:scale-[1.1] lg:mb-[-40px];
+  @apply origin-bottom scale-[1.2] mb-[-10px] md:scale-[1.05] md:mb-[-30px] lg:scale-[1.05] lg:mb-[-25px] xl:scale-[1.05] xl:mb-[-20px];
 }
 
 .leopardWrapper {
-  @apply origin-bottom scale-[1.0] ml-[0px] md:scale-[1.1] md:ml-[15px] lg:scale-[1.2] lg:ml-[26px];
+  @apply origin-bottom scale-[1.0] ml-[0px] md:scale-[1.1] md:ml-[15px] lg:scale-[1.25] lg:ml-[20px] xl:scale-[1.35] xl:ml-[24px];
 }
