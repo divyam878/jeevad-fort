@@ -1,11 +1,11 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col overflow-y-auto md:overflow-hidden pt-6 md:pt-12 px-4 md:px-12 lg:px-20 pb-6 md:pb-8;
+  @apply relative w-full min-h-full min-h-[880px] lg:min-h-[920px] h-auto shrink-0 flex flex-col pt-16 md:pt-20 lg:pt-24 px-4 sm:px-6 md:px-8 lg:px-12 pb-16 md:pb-20 lg:pb-24;
 }
 
 .scrollWrapper {
-  @apply w-full h-full flex flex-col max-w-7xl mx-auto overflow-y-auto pb-6 md:pb-10;
+  @apply w-full h-auto min-h-full flex flex-col max-w-7xl xl:max-w-[1400px] mx-auto pb-6 md:pb-10;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -30,7 +30,7 @@
 }
 
 .headerBox {
-  @apply flex flex-col w-full mb-4 md:mb-12 shrink-0;
+  @apply flex flex-col w-full mb-6 md:mb-14 shrink-0;
 }
 
 .headerTitle {
@@ -46,33 +46,45 @@
 }
 
 .contentBox {
-  @apply flex flex-col items-center justify-center w-full max-w-5xl mx-auto py-6 px-4 md:py-20 md:px-20 lg:py-20 lg:px-28 relative bg-transparent mt-4 border border-[#481c22]/60;
+  @apply relative w-full max-w-4xl xl:max-w-[1050px] mx-auto flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12 py-10 sm:py-12 md:py-16 lg:py-18 xl:py-22 px-6 sm:px-8 md:px-10 bg-transparent my-12 md:my-16 lg:my-20 border border-[#481c22]/50;
 }
 
 .svgWrapper {
-  @apply hidden lg:block absolute -inset-12 pointer-events-none;
+  @apply hidden lg:block absolute -top-16 -bottom-16 -left-16 -right-16 xl:-top-22 xl:-bottom-22 xl:-left-22 xl:-right-22 pointer-events-none overflow-visible;
 }
 
 .boxFrameSvg {
-  @apply object-fill w-full h-full opacity-90;
+  @apply object-fill w-full h-full opacity-95;
 }
 
 .textContainer {
-  @apply relative z-10 w-full max-w-4xl flex flex-col;
+  @apply relative z-10 w-full lg:w-[48%] max-w-[400px] xl:max-w-[440px] flex flex-col text-left;
 }
 
 .paragraph {
-  @apply text-[13px] md:text-base text-[#481c22]/90 font-normal leading-relaxed text-left md:text-justify mb-4 md:mb-6;
+  @apply text-[12px] sm:text-[13px] md:text-[13.5px] lg:text-[14px] text-[#481c22]/90 font-normal leading-relaxed mb-2 sm:mb-2.5;
 }
 
 .bulletList {
-  @apply flex flex-col gap-2 list-disc pl-5 mt-2;
+  @apply flex flex-col gap-1 list-disc pl-4 mt-0.5;
 }
 
 .bulletList li {
-  @apply text-[13px] md:text-base text-[#481c22]/90 font-normal leading-relaxed;
+  @apply text-[11.5px] sm:text-[12.5px] md:text-[13px] text-[#481c22]/90 font-normal leading-snug;
 }
 
 .bulletTitle {
   @apply font-bold;
+}
+
+.imageContainer {
+  @apply relative z-10 w-full lg:w-[44%] max-w-[320px] sm:max-w-[350px] lg:max-w-[380px] shrink-0 flex justify-center items-center;
+}
+
+.imageWrapper {
+  @apply relative w-full aspect-[16/11] max-h-[210px] sm:max-h-[225px] md:max-h-[240px] overflow-hidden border border-[#481c22]/30 shadow-md bg-[#481c22]/5;
+}
+
+.dinnerImage {
+  @apply object-cover object-center w-full h-full transition-transform duration-700 hover:scale-105;
 }

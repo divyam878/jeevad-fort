@@ -27,13 +27,24 @@ export default function SignatureDiningSection() {
               Andheri Burj is one of the most distinctive spaces within Jeevad Fort. The historic stone bastion once housed a formidable 12-foot-long cannon, serving as a vital part of the fort&apos;s defensive history.
             </p>
             <p className={styles.paragraph}>
-              Today, this storied rampart is transformed into an open-air private dining venue. Available on request, guests can experience a bespoke candlelit dinner surrounded by ancient stone walls, panoramic twilight skies, and sweeping views of the seasonal river and distant mountains.
+              Today, this storied rampart is transformed into an open-air private dining venue. Available on request, guests can experience a bespoke candlelit dinner surrounded by ancient stone walls, panoramic twilight skies, and sweeping views of the seasonal river.
             </p>
             <ul className={styles.bulletList}>
-              <li><span className={styles.bulletTitle}>The Setting:</span> Private dinner on the open-air historic bastion.</li>
-              <li><span className={styles.bulletTitle}>The Atmosphere:</span> Sunset and twilight views across the rural landscape.</li>
+              <li><span className={styles.bulletTitle}>The Setting:</span> Private dinner on the open-air bastion.</li>
+              <li><span className={styles.bulletTitle}>The Atmosphere:</span> Sunset and twilight views across the landscape.</li>
               <li><span className={styles.bulletTitle}>Ethos:</span> A dinner surrounded by centuries of history.</li>
             </ul>
+          </div>
+
+          <div className={styles.imageContainer}>
+            <div className={styles.imageWrapper}>
+              <Image 
+                src="/assets/dinner-image.png" 
+                alt="Dinner at Andheri Burj" 
+                fill 
+                className={styles.dinnerImage} 
+              />
+            </div>
           </div>
         </div>
       </div>

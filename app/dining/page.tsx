@@ -50,19 +50,7 @@ export default function DiningPage() {
         <CulinaryHeritageSection />
         <SignatureDiningSection />
         
-        {experiences.map((exp, idx) => (
-          <ImmersiveExperienceSection 
-            key={idx}
-            number={exp.number}
-            title={exp.title}
-            subtitle={exp.subtitle}
-            description={exp.description}
-            highlights={exp.highlights}
-            availability={exp.availability}
-            imgSrc="/assets/dinner-image.png"
-            showTopDecorative={idx === 0}
-          />
-        ))}
+        <ImmersiveExperienceSection experiences={experiences} />
 
         <OurApproachSection />
         <Footer />

@@ -1,8 +1,12 @@
 @reference "../../app/globals.css";
 
 .section {
-  /* Dynamic height: expands naturally on mobile, fills the screen on desktop */
-  @apply relative min-h-screen h-auto lg:h-screen w-full shrink-0 flex flex-col bg-[#481c22] p-6 sm:p-10 md:p-14 lg:p-16 xl:p-20;
+  /* Keep section height intact: fills screen on tall displays, maintains height and scrolls on small laptop heights */
+  @apply relative min-h-screen min-h-[880px] h-auto lg:min-h-full lg:min-h-[920px] lg:h-auto w-full shrink-0 flex flex-col bg-[#481c22] py-16 sm:py-20 md:py-24 lg:py-28 px-6 sm:px-8 md:px-10 lg:px-12;
+}
+
+.contentWrapper {
+  @apply relative z-10 w-full h-auto min-h-full flex flex-col max-w-7xl xl:max-w-[1400px] mx-auto;
 }
 
 .header {
@@ -22,12 +26,10 @@
 }
 
 .grid {
-  /* Re-enable flex expansion on large displays to fill available viewport height */
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pb-8 lg:pb-0 lg:flex-1 lg:min-h-0;
 }
 
 .card {
-  /* Keep mobile fluid, restore tall min-height on desktop */
   @apply flex flex-col border border-[#f4ede3]/10 relative min-h-[380px] lg:min-h-[480px] xl:min-h-[520px] bg-[#481c22] cursor-pointer transition-colors duration-500 overflow-hidden;
 }
 

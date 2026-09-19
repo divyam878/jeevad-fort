@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative w-full min-h-screen md:h-full shrink-0 flex flex-col overflow-y-auto md:overflow-hidden pt-6 md:pt-12 px-4 md:px-12 lg:px-20 pb-6 md:pb-8;
+  @apply relative w-full min-h-full min-h-[880px] lg:min-h-[920px] h-auto shrink-0 flex flex-col pt-16 md:pt-20 lg:pt-24 px-4 sm:px-6 md:px-8 lg:px-12 pb-16 md:pb-20 lg:pb-24;
 }
 
 .topDecorative {
@@ -21,7 +21,7 @@
 }
 
 .headerBox {
-  @apply flex flex-col max-w-7xl w-full mx-auto mb-6 md:mb-12 shrink-0;
+  @apply flex flex-col max-w-7xl xl:max-w-[1400px] w-full mx-auto mb-6 md:mb-12 shrink-0;
 }
 
 .headerTitle {
@@ -37,7 +37,7 @@
 }
 
 .contentGrid {
-  @apply flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 lg:gap-24 max-w-7xl w-full mx-auto h-auto md:h-0 md:min-h-0;
+  @apply flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 lg:gap-24 max-w-7xl xl:max-w-[1400px] w-full mx-auto h-auto min-h-full;
 }
 
 .leftColumn {

@@ -8,6 +8,7 @@ import PillarsSection from "@/components/pursuits/PillarsSection";
 import CuratedExperienceSection from "@/components/pursuits/CuratedExperienceSection";
 import WildlifeSection from "@/components/pursuits/WildlifeSection";
 import ItinerarySection from "@/components/pursuits/ItinerarySection";
+import PursuitsCtaSection from "@/components/pursuits/PursuitsCtaSection";
 import Footer from "@/components/home/Footer";
 import styles from "./Pursuits.module.css";
 
@@ -71,6 +72,7 @@ export default function PursuitsPage() {
 
         <WildlifeSection />
         <ItinerarySection />
+        <PursuitsCtaSection />
         <Footer />
 
       </div>

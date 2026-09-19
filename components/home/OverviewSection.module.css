@@ -1,11 +1,11 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative h-full w-full shrink-0 flex flex-col md:flex-row bg-[#481c22];
+  @apply relative min-h-full min-h-[800px] h-auto w-full shrink-0 flex flex-col md:flex-row bg-[#481c22];
 }
 
 .leftColumn {
-  @apply w-full md:w-1/2 p-10 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center h-full overflow-y-auto;
+  @apply w-full md:w-1/2 px-6 py-12 sm:px-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center min-h-full;
 }
 
 .title {
@@ -25,7 +25,7 @@
 }
 
 .rightColumn {
-  @apply w-full md:w-1/2 flex flex-col h-full;
+  @apply w-full md:w-1/2 flex flex-col min-h-full;
 }
 
 .imageWrapper {
@@ -37,7 +37,7 @@
 }
 
 .infoBox {
-  @apply bg-[#f4ede3] p-10 lg:p-16 flex flex-col justify-center shrink-0 flex-[1];
+  @apply bg-[#f4ede3] px-6 py-10 sm:px-8 md:p-10 lg:p-16 flex flex-col justify-center shrink-0 flex-[1];
 }
 
 .infoTitle {
@@ -47,3 +47,5 @@
 .infoText {
   @apply font-sans font-semibold text-[17px] text-[#481c22] leading-snug;
 }
+
+

@@ -60,6 +60,7 @@ export default function SanctuaryPage() {
 
         <RoomCategorySection 
           isFirst={false}
+          isLast={true}
           categoryType="ONE FORT ROOM"
           number="3."
           title="The Deluxe Room"

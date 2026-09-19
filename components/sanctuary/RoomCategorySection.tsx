@@ -6,6 +6,7 @@ import styles from "./RoomCategorySection.module.css";
 
 interface RoomCategoryProps {
   isFirst?: boolean;
+  isLast?: boolean;
   categoryType: string;
   number: string;
   title: string;
@@ -17,6 +18,7 @@ interface RoomCategoryProps {
 
 export default function RoomCategorySection({
   isFirst = false,
+  isLast = false,
   categoryType,
   number,
   title,
@@ -43,7 +45,7 @@ export default function RoomCategorySection({
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={`${styles.section} ${isFirst ? styles.firstSection : styles.subsequentSection} ${isLast ? styles.lastSection : ""}`}>
         {isFirst && (
           <div className={styles.topDecorative}>
             <Image src="/assets/flower-border.svg" alt="border" width={200} height={20} className={styles.topBorder} />

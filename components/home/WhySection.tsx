@@ -41,35 +41,37 @@ export default function WhySection() {
 
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
-        <h2 className={styles.title}>Why Jeevad?</h2>
-        <hr className={styles.divider} />
-        <p className={styles.subtitle}>
-          Jeevad Fort brings together four elements that rarely exist together in one property.
-        </p>
-      </div>
+      <div className={styles.contentWrapper}>
+        <div className={styles.header}>
+          <h2 className={styles.title}>Why Jeevad?</h2>
+          <hr className={styles.divider} />
+          <p className={styles.subtitle}>
+            Jeevad Fort brings together four elements that rarely exist together in one property.
+          </p>
+        </div>
 
-      <div className={styles.grid}>
-        {cards.map((card, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardBgHover}></div>
-            <div className={styles.cardHeader}>
-              <h3 className={styles.cardTitle}>{card.title}</h3>
-            </div>
-            <div className={styles.cardBody}>
-              <p className={styles.cardText}>{card.text}</p>
-              <div className={`${styles.cardImageWrapper} ${card.wrapperClass || ""}`}>
-                <Image 
-                  src={card.image} 
-                  alt={card.alt} 
-                  fill
-                  className={styles.cardImage}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
+        <div className={styles.grid}>
+          {cards.map((card, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.cardBgHover}></div>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.cardTitle}>{card.title}</h3>
+              </div>
+              <div className={styles.cardBody}>
+                <p className={styles.cardText}>{card.text}</p>
+                <div className={`${styles.cardImageWrapper} ${card.wrapperClass || ""}`}>
+                  <Image 
+                    src={card.image} 
+                    alt={card.alt} 
+                    fill
+                    className={styles.cardImage}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
