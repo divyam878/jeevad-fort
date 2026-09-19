@@ -6,7 +6,7 @@ export default function VisualsHeroSection() {
   return (
     <section className={styles.section}>
       <div className={styles.titleBox}>
-        <h1 className={styles.title}>VISUALS</h1>
+        <h1 className={styles.title}>Visuals</h1>
       </div>
       
       <div className={styles.fortImageWrapper}>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Cinzel } from "next/font/google";
+import { Montserrat, Cinzel, Luxurious_Script } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -12,6 +12,12 @@ const cinzel = Cinzel({
   variable: "--font-cinzel",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+});
+
+const luxuriousScript = Luxurious_Script({
+  variable: "--font-eagle-lake",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${cinzel.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${cinzel.variable} ${luxuriousScript.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>

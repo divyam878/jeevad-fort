@@ -5,7 +5,7 @@
 }
 
 .title {
-  @apply my-auto md:my-0 w-full text-center text-5xl sm:text-6xl md:text-7xl lg:text-[100px] text-[#481c22] uppercase tracking-wide font-sans font-bold z-10 leading-none;
+  @apply my-auto md:my-0 w-full text-center text-8xl sm:text-6xl md:text-7xl lg:text-[200px] text-[#481c22] tracking-wide font-display font-normal z-10 leading-none;
 }
 
 .imageWrapper {

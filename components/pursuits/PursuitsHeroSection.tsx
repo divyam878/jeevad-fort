@@ -4,7 +4,7 @@ import styles from "./PursuitsHeroSection.module.css";
 export default function PursuitsHeroSection() {
   return (
     <section className={styles.section}>
-      <h1 className={styles.title}>PURSUITS</h1>
+      <h1 className={styles.title}>Pursuits</h1>
       <div className={styles.imageWrapper}>
         <Image 
           src="/assets/fort-image.png" 

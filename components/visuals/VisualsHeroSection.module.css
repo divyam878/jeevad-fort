@@ -9,7 +9,7 @@
 }
 
 .title {
-  @apply font-sans font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[100px] text-white uppercase tracking-widest leading-none;
+  @apply font-display font-normal text-8xl sm:text-6xl md:text-7xl lg:text-[200px] text-white tracking-widest leading-none;
 }
 
 .fortImageWrapper {

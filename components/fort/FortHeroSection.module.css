@@ -9,15 +9,15 @@
 }
 
 .title {
-  @apply w-full text-center text-5xl sm:text-6xl md:text-7xl lg:text-[110px] text-[#481c22] uppercase tracking-wide flex flex-wrap justify-center items-center;
+  @apply w-full text-center text-8xl sm:text-6xl md:text-7xl lg:text-[200px] text-[#481c22] tracking-wide flex flex-wrap justify-center items-center font-display font-normal;
 }
 
 .titleLight {
-  @apply font-sans font-light;
+  @apply font-display font-normal;
 }
 
 .titleBold {
-  @apply font-sans font-bold ml-2 sm:ml-4 md:ml-6;
+  @apply font-display font-normal ml-2 sm:ml-4 md:ml-6;
 }
 
 .imageWrapper {

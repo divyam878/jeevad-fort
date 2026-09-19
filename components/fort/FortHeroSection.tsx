@@ -6,8 +6,8 @@ export default function FortHeroSection() {
     <section className={styles.section}>
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>
-          <span className={styles.titleLight}>THE</span>
-          <span className={styles.titleBold}>FORT</span>
+          <span className={styles.titleLight}>The</span>
+          <span className={styles.titleBold}>Fort</span>
         </h1>
       </div>
 

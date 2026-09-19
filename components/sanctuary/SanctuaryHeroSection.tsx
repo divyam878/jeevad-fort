@@ -4,7 +4,7 @@ import styles from "./SanctuaryHeroSection.module.css";
 export default function SanctuaryHeroSection() {
   return (
     <section className={styles.section}>
-      <h1 className={styles.title}>SANTUARY</h1>
+      <h1 className={styles.title}>Sanctuary</h1>
       <div className={styles.imageWrapper}>
         <Image 
           src="/assets/fort-image.png" 
